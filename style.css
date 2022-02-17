@@ -552,6 +552,150 @@ footer .social a:hover {
 /* Responsivo */
 
 /*====== MEDIA QUERIES ===========================*/
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+
+  /* reusable classes */
+  .container {
+    max-width: 912px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 27rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.125rem;
+    width: 11.16rem;
+    padding: 1rem;
+    justify-content: center;
+    font-size: 0.9375rem;
+  }
+
+  /* navigation */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    /*quando a seção está vista, aparecer selecionada no menu */
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  #header.scroll nav ul li a:hover,
+  #header.scroll nav ul li a.active {
+    /* mudando cor do menu para branco */
+    color: var(--text-color-light);
+  }
+
+  #header.scroll nav ul li a::after {
+    /* linha de baixo do menu branca tbm */
+    background: var(--text-color-light);
+  }
+
+  nav .icon-menu {
+    /* hamburguer some */
+    display: none;
+  }
+
+  /* home */
+
+  #home .container {
+    /* um elemento ao lado do outro */
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1; /*inverte ordem da img (order só funcina se o pai tem grid ou flex) */
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 28rem;
+    text-align: left;
+  }
+
+  /*about*/
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  #about .image::before {
+    height: 80%;
+  }
+
+  /*services*/
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /*testimonials*/
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*contact*/
+  #contact .container {
+    grid-auto-flow: column; /*é tipo o 'display: flex' (que é row por padrão*/
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 27rem;
+    padding: 1.6875rem;
+  }
+
+  #contact .button {
+    width: 13.16rem;
+  }
+
+  /*footer*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center; /*centro da linha*/
+    justify-content: space-between;
+  }
+
+  footer .social a {
+    font-size: 5rem;
+  }
+}
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
   /* reusable classes */
@@ -691,11 +835,5 @@ footer .social a:hover {
   }
 }
 /* large devices: 1023 > */
-/* large devices: 992 > */
-@media (min-width: 992px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size: 1.125rem;
-  }
-}
+
 /* medium devices: 767 > */
