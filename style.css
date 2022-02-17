@@ -595,20 +595,24 @@ footer .social a:hover {
   }
 
   nav .menu ul li a.title.active {
+    /*quando a seção está vista, aparecer selecionada no menu */
     font-weight: bold;
     -webkit-font-smoothing: auto;
   }
 
   #header.scroll nav ul li a:hover,
   #header.scroll nav ul li a.active {
+    /* mudando cor do menu para branco */
     color: var(--text-color-light);
   }
 
   #header.scroll nav ul li a::after {
+    /* linha de baixo do menu branca tbm */
     background: var(--text-color-light);
   }
 
   nav .icon-menu {
+    /* hamburguer some */
     display: none;
   }
 
@@ -630,7 +634,7 @@ footer .social a:hover {
   }
 
   #home .image {
-    order: 1; /*order só funcina se o pai tem grid ou flex*/
+    order: 1; /*inverte ordem da img (order só funcina se o pai tem grid ou flex) */
   }
 
   #home .text {
@@ -678,7 +682,7 @@ footer .social a:hover {
 
   footer .container {
     grid-auto-flow: column;
-    align-items: center;
+    align-items: center; /*centro da linha*/
     justify-content: space-between;
   }
 
