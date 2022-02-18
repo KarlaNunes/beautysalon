@@ -525,12 +525,14 @@ footer .social {
   width: fit-content;
 }
 
+/*para subir ícones*/
 footer .social a {
   /*para subir ícones no hover*/
   transition: 0.3s;
   display: inline-block;
 }
 
+/*para subir ícones*/
 footer .social a:hover {
   transform: translateY(-8px);
 }
