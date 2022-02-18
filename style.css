@@ -375,6 +375,16 @@ nav.show div.icon-close {
   text-align: center;
 }
 
+section .cards .card {
+  transition: 0.3s;
+}
+
+section .cards .card:hover {
+  cursor: pointer;
+  background: var(--base-color-second);
+  color: black;
+}
+
 .card i {
   display: block; /*aplica o margin-bottom*/
   margin-bottom: 1.5rem;
